@@ -10,7 +10,7 @@ function MovieSearch() {
     console.log("submitting")
 
     const apiKey = '9c3d73e4f07dbaa0510572dfefe3c275'
-    const url = `http://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${query}&page=1&include_adult=false`
+    const url = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&query=${query}&page=1&include_adult=false`
 
     try {
       const res = await fetch(url)
